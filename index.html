@@ -1,0 +1,315 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html ; charset= utf-8" />
+		<title>虚拟穿搭    衣依所想</title> 
+		<link rel="stylesheet" href="css/clothes.css" type="text/css" />
+		<script type="text/javascript" src="js/try_room.js" ></script>
+	</head>
+	<body>
+		<!--试衣间-->
+		<div id="try_room" class="try_room" style="position: fixed;top: 100px;z-index: 999;">
+			<div class="try_room_firstPart" onclick="show23()"><img src="img/ss_1.gif" width="29" height="138" style="cursor: pointer;" /></div>
+			<div class="try_room_secondAndthirdPart" id="secondAndthirdPart">
+				<div class="try_room_secondPart" id="secondPart">
+					<span class="try_room_secondPart_wm">
+						<span id="men_icon" class="sex_icon" style="background-color: darkgray;" onclick="men_show()" ><button id="men_icon_b">男士</button></span>
+						<span id="women_icon" class="sex_icon" style="font-family: '楷体';font-weight: bold;" onclick="women_show()" ><button id="women_icon_b">女士</button></span>
+					</span>
+					<span class="try_room_secondPart_jt">
+						<img src="img/ss_3.gif" onclick="show3()" />
+					</span>
+					
+					<!--人体图片      贴衣服-->
+					<!--men-->
+					<span class="model_men" id="model_men">
+						<img id="model_5" width="193" height="374" src="" />
+						<img id="model_4" width="193" height="374" src="" />
+						<img id="model_3" width="193" height="374" src="" />
+						<img id="model_2" width="193" height="374" src="" />
+					</span>
+					<!--women-->
+					<span class="model_women" id="model_women">
+						<img id="model_8" width="193" height="374" src="" />
+						<img id="model_7" width="193" height="374" src="" />
+						<img id="model_6" width="193" height="374" src="" />
+					</span>
+				</div> <!--第二部分结束-->
+				
+				<div class="try_room_thirdPart" id="thirdPart">
+					<div class="try_room_gd" id="gundong" style="position: absolute;left: 12px;top: 46px;width: 155px;overflow: hidden;">
+						<div id="gdheight">
+							<!--第三部分 展示细节 xt 小图-->
+							<!--men xt-->
+							<div class="try_room_model_men_xt" id="ss_men_xt">
+								<table width="100%" border="0" cellpadding="0" cellspacing="0">
+									<tr>
+										<td height="30"><img src="img/t_86.gif" width="46" height="12" /></td>
+									</tr>
+									<tr>
+										<td>
+											<div class="try_room_clothes_xt">
+												<ul>
+													<li id="ss_xtxs_5"></li>
+													<li id="ss_xtxs_4"></li>
+												</ul>
+											</div>
+										</td>
+									</tr>
+								</table> <!--上半身衣服小图显示结束-->
+								<table width="100%" border="0" cellpadding="0" cellspacing="0">
+									<tr>
+										<td height="30"><img src="img/t_87.gif" width="59" height="12" /></td>
+									</tr>
+									<tr>
+										<td class="try_room_clothes_xt">
+											<table border="0" cellspacing="0" cellpadding="0">
+												<tr>
+													<td width="57" height="57">
+														<div class="try_room_clothes_xt">
+															<ul>
+																<li id="ss_xtxs_3"></li>
+																<li id="ss_xtxs_2"></li>
+															</ul>
+														</div>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table> <!--下半身衣服xt显示结束-->
+							</div>  <!--men xt结束-->
+							
+							<!--women xt-->
+							<div class="try_room_model_women_xt" id="ss_women_xt">
+								<table width="100%" cellspacing="0" cellpadding="0">
+									<tr>
+										<td height="30"><img src="img/t_86.gif" width="46" height="12"</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="try_room_clothes_xt">
+												<ul>
+													<li id="ss_xtxs_8"></li>
+													<li id="ss_xtxs_7"></li>
+												</ul>
+											</div>
+										</td>
+									</tr>
+								</table>  <!--上半身结束-->
+								
+								<table width="100%" border="0" cellpadding="0" cellspacing="0">
+									<tr>
+										<td height="30"><img src="img/t_87.gif" width="59" height="12" /></td>
+									</tr>
+									<tr>
+										<td class="try_room_clothes_xt">
+											<table border="0" cellspacing="0" cellpadding="0">
+												<tr>
+													<td width="57" height="57">
+														<div class="try_room_clothes_xt">
+															<ul>
+																<li id="ss_xtxs_6"></li>
+															</ul>
+														</div>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table> <!--下半身衣服xt显示结束-->
+							</div>   <!--women xt 结束-->
+							
+						</div>
+					</div>
+					<div class="try_room_delete" onclick="deleteClothes()">
+						<button >清除</button>
+					</div>
+					<div class="try_room_jt" id="ssjt">
+						<img onmousedown="scroll(-3)" onmouseover="(-3),this.src='img/j_1.gif'" style="cursor: hand;" onmouseout="scroll(0),this.src='img/j_11.gif'" border="0" src="img/j_11.gif" width="12" height="12" title="按下鼠标速度会更快">
+						<img onmousedown="scroll(3)" onmouseover="scroll(3),this.src='img/j_2.gif'" style="cursor: hand;" onmouseout="scroll(0),this.src='img/j_22.gif'" border="0" src="img/j_22.gif" width="12" height="12" title="按下鼠标速度会更快">
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script type="text/javascript">
+			
+		</script>
+		<!--显示衣服大图，提供衣服供选择-->
+		<div class="clothes_pic" id="datu">
+			<div class="clothes_type_header">男装区</div>
+			<ul>
+				<li class="mouse_out" onmousemove="this.className='mouse_on'" onmouseout="this.className='mouse_out'">
+					<table width="162" style="margin-top: 15px; "border="0" align="center" cellpadding="0" cellspacing="0">
+						<tr>
+							<td height="211" align="center" bgcolor="#FFFFFF">
+								<a href="#">
+									<img src="img/haha_1.gif" width="162" height="202" border="0" />
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td align="center" class="clothes_pic_font2">￥100.00</td>
+						</tr>
+						<tr>
+							<td align="center" class="clothes_pic_font1">
+								<a href="#">产品名称</a>
+							</td>
+						</tr>
+						<tr>
+							<td align="center" class="clothes_pic_font1">面料</td>
+						</tr>
+						<tr>
+							<td height="26" align="center" class="clothes_pic_font3">
+								<img src="img/t_25.gif" width="49" height="18" onclick="xt(5,'img/shangyi.png','img/haha_1.gif',1001)" style="cursor: pointer;" />
+							</td>
+						</tr>
+					</table>
+				</li>
+				
+				<li class="mouse_out" onmousemove="this.className='mouse_on'" onmouseout="this.className='mouse_out'">
+					<table width="162" style="margin-top: 15px;" border="0" align="center" cellpadding="0" cellspacing="0">
+						<tr>
+							<td height="211" align="center" bgcolor="#FFFFFF">
+								<a href="#">
+								<img src="img/haha_3.gif" width="162" height="202" border="0" />
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td align="center" class="clothes_pic_font2">￥100.00</td>
+						</tr>
+						<tr>
+							<td align="center" style="padding-top: 7px;padding-bottom: 7px;" class="clothes_pic_font1"><a href="#">产品名称</a></td>
+						</tr>
+						<tr>
+							<td align="center" class="clothes_pic_font1">面料</td>
+						</tr>
+						<tr>
+							<td height="26" align="center">
+								<img src="img/t_25.gif" width="49" height="18" onclick="xt(3,'img/kuzi.png','img/haha_3.gif',1002)" style="cursor: pointer;" />
+							</td>
+						</tr>
+					</table>
+				</li>
+				
+				<li class="mouse_out" onmousemove="this.className='mouse_on'" onmouseout="this.className='mouse_out'">
+					<table width="162" style="margin-top: 15px;" border="0" align="center" cellpadding="0" cellspacing="0">
+						<tr>
+							<td height="211" align="center" bgcolor="#FFFFFF">
+								<a href="#">
+								<img src="img/shoes.jpg" width="162" height="202" border="0" />
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td align="center" class="clothes_pic_font2">￥100.00</td>
+						</tr>
+						<tr>
+							<td align="center" style="padding-top: 7px;padding-bottom: 7px;" class="clothes_pic_font1"><a href="#">产品名称</a></td>
+						</tr>
+						<tr>
+							<td align="center" class="clothes_pic_font1">面料</td>
+						</tr>
+						
+						<tr>
+							<td height="26" align="center">
+								<img src="img/t_25.gif" width="49" height="18" onclick="xt(2,'img/men shoes.png','img/shoes.jpg',1003)" style="cursor: pointer;" />
+							</td>
+						</tr>
+					</table>
+				</li>
+			</ul>
+			
+		</div>
+		
+		
+		
+		<div class="clothes_pic">
+			<div class="clothes_type_header">女装区</div>
+			<ul>
+			    <li class="mouse_out" onmousemove="this.className='mouse_on'" onmouseout="this.className='mouse_out'">
+					<table width="162" style="margin-top: 15px;" border="0" align="center" cellpadding="0" cellspacing="0">
+						<tr>
+							<td height="211" align="center" bgcolor="#FFFFFF">
+								<a href="#">
+								<img src="img/womenclothes_1.gif" width="162" height="202" border="0" />
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td align="center" style="padding-top: 7px;padding-bottom: 7px;" class="clothes_pic_font1"><a href="#">产品名称</a></td>
+						</tr>
+						<tr>
+							<td align="center" class="clothes_pic_font1">面料</td>
+						</tr>
+						<tr>
+							<td align="center" class="clothes_pic_font2">￥100.00</td>
+						</tr>
+						<tr>
+							<td height="26" align="center">
+								<img src="img/t_25.gif" width="49" height="18" onclick="xt(7,'img/womenclothes_1.png','img/womenclothes_1.gif',2001)" style="cursor: pointer;" />
+							</td>
+						</tr>
+					</table>
+				</li>
+				
+				<li class="mouse_out" onmousemove="this.className='mouse_on'" onmouseout="this.className='mouse_out'">
+					<table width="162" style="margin-top: 15px;" border="0" align="center" cellpadding="0" cellspacing="0">
+						<tr>
+							<td height="211" align="center" bgcolor="#FFFFFF">
+								<a href="#">
+								<img src="img/haha_5.gif" width="162" height="202" border="0" />
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td align="center" style="padding-top: 7px;padding-bottom: 7px;" class="clothes_pic_font1"><a href="#">产品名称</a></td>
+						</tr>
+						<tr>
+							<td align="center" class="clothes_pic_font1">面料</td>
+						</tr>
+						<tr>
+							<td align="center" class="clothes_pic_font2">￥100.00</td>
+						</tr>
+						<tr>
+							<td height="26" align="center">
+								<img src="img/t_25.gif" width="49" height="18" onclick="xt(6,'img/women_kuzi.png','img/haha_5.gif',2002)" style="cursor: pointer;" />
+							</td>
+						</tr>
+					</table>
+				</li>
+				
+				<li class="mouse_out" onmousemove="this.className='mouse_on'" onmouseout="this.className='mouse_out'">
+					<table width="162" style="margin-top: 15px;" border="0" align="center" cellpadding="0" cellspacing="0">
+						<tr>
+							<td height="211" align="center" bgcolor="#FFFFFF">
+								<a href="#">
+								<img src="img/redclothes.jpg" width="162" height="202" border="0" />
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td align="center" style="padding-top: 7px;padding-bottom: 7px;" class="clothes_pic_font1"><a href="#">产品名称</a></td>
+						</tr>
+						<tr>
+							<td align="center" class="clothes_pic_font1">面料</td>
+						</tr>
+						<tr>
+							<td align="center" class="clothes_pic_font2">￥100.00</td>
+						</tr>
+						<tr>
+							<td height="26" align="center">
+								<img src="img/t_25.gif" width="49" height="18" onclick="xt(7,'img/redclothes.png','img/redclothes.jpg',2003)" style="cursor: pointer;" />
+							</td>
+						</tr>
+					</table>
+				</li>
+				
+				
+			</ul>
+		</div>
+	</body>
+</html>
