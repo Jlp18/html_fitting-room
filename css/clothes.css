@@ -1,0 +1,303 @@
+body { text-align: left;font-family: "微软雅黑";font-size:12px;background: #FFF;color: #000;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,blockquote{padding:0; margin:0;}
+
+li{
+	list-style-type: none;
+}
+ol,ul{
+	list-style-type: none;
+}
+table,td,tr,th{
+	font-size: 12px;
+}
+*{
+	font-family: "宋体";
+	font-size: 12px;
+
+}
+a{
+	text-decoration: none;
+}
+.try_room{width: auto;
+float: left;
+height: 432px;
+}
+
+.try_room_firstPart{width: 29px;
+height: 138px;
+display: block;
+float: right;
+padding-top: 152px;
+}
+
+
+.sex_icon{
+	cursor: pointer;
+}
+#men_icon_b{
+	font-family: '楷体';
+	font-weight: bold;
+	background-color: #FF6600;
+}
+#women_icon_b{
+	font-family: '楷体';
+	font-weight: bold;
+}
+
+.try_room_secondAndthirdPart{float: right;
+width: auto;
+display: none;
+}
+
+.try_room_secondPart{width: 200px;
+height: 432px;
+display: block;
+float: right;
+padding-top: 0px;
+position: relative;
+}
+
+.try_room_secondPart_wm{position: absolute;
+z-index: 111;
+top: 14px;
+left: 14px;
+}
+
+.try_room_secondPart_jt{padding-top: 200px;
+position: absolute;
+cursor: pointer;
+z-index: 100;
+right: 191px;
+}
+
+.model_men{width: 200px;
+height: 432px;
+background-image: url(../img/ss_2.jpg); 
+background-repeat: no-repeat;
+background-position: center center;
+display: block;
+position: absolute;
+z-index: 1;
+}
+
+.model_women{width: 200px;
+height: 432px;
+background-image: url(../img/ss_22.jpg);
+background-repeat: no-repeat;
+background-position: center center;
+display: none;
+position: absolute;
+z-index: 1;
+}
+
+.try_room_thirdPart{width: 188px;
+height: 410px;
+display: block;
+float: right;
+background-image: url(../img/ss_4.gif);
+background-repeat: no-repeat;
+background-position: center 24px;
+position: relative;
+}
+.try_room_gd{position: absolute;
+left: 12px;
+top: 46px;
+width: 155px;
+height: 340px;
+overflow: hidden;
+}
+
+.try_room_delete{top: 360px;
+left: 120px;
+width: 42px;
+height: 20px;
+text-align: center;
+border: 1px solid #FF6600;
+position: absolute;
+cursor: pointer;
+}
+
+.try_room_delete button{
+	width: 42px;
+height: 20px;
+	font-family: "楷体";
+font-weight: bold;
+background-color: #FF6600;
+}
+
+.try_room_jt{
+	top: 45px;
+	left: 162px;
+	width: 20px;
+	height: 36px;
+	position: absolute;
+	overflow: hidden;
+	display: none;
+}
+.try_room_jt img{
+	padding-bottom: 6px;
+}
+
+
+.try_room_clothes_xt1{
+	width:38px; height:48px; 
+}
+.try_room_clothes_xt2{
+	width:40px;  height:50px;
+}
+
+.try_room_clothes_xt{width: 155px;}
+.try_room_clothes_xt li{float: left;
+display: block;
+}
+.try_room_clothes_xt li div{padding-bottom:4px;
+margin-right: 4px;
+width: 40px;
+float: left;
+}
+.try_room_clothes_xt li div img{float: left;
+cursor: pointer;
+}
+.try_room_model_men_xt{width: 155px;
+margin: auto;
+}
+.try_room_model_women_xt{display: none;
+width: 155px;
+margin: auto;
+}
+
+
+#model_2{position: absolute;
+left: 6px;
+top: 30px;
+z-index: 2;
+display: none;
+}
+#model_3{position: absolute;
+left: 6px;
+top: 30px;
+z-index: 3;
+display: none;
+}
+#model_4{position: absolute;
+left: 6px;
+top: 30px;
+z-index: 4;
+display: none;
+}
+#model_5{position: absolute;
+left: 6px;
+top: 30px;
+z-index: 5;
+display: none;
+}
+
+#model_6{position: absolute;
+left: 6px;
+top: 30px;
+z-index: 3;
+display: none;
+}
+#model_7{position: absolute;
+left: 6px;
+top: 30px;
+z-index: 4;
+display: none;
+}
+#model_8{position: absolute;
+left: 6px;
+top: 30px;
+z-index: 5;
+display: none;
+}
+
+
+
+
+
+
+
+
+
+/*展示衣服大图*/
+
+.clothes_type_header{
+	margin-top: 20px;
+	margin-bottom: 5px;
+	margin-left: 7px;
+	font-family: "微软雅黑";
+	font-size: 30px;
+	font-weight: 1000;
+	letter-spacing: 5px;
+}
+
+
+
+.clothes_pic{width: 800px;
+float: right;
+margin-right: 20px;
+margin-bottom: 30px;
+}
+.mouse_out{display: block;
+float: left;
+margin: 7px;
+width: 200px;
+border-right-style: solid;
+border-bottom-style: solid;
+border-left-style: solid;
+border-top-style: solid;
+border-right-color: #CCCCCC;
+border-right-width: thin;
+border-left-color: #CCCCCC;
+border-left-width: thin;
+border-top-color: #CCCCCC;
+border-top-width: thin;
+border-bottom-color: #CCCCCC;
+border-bottom-width: thin;
+}
+
+.mouse_on{width: 200px;
+display: block;
+float: left;
+margin: 7px;
+border-right-style: solid;
+border-bottom-style: solid;
+border-left-style: solid;
+border-top-style: solid;
+border-right-color: #FF6600;
+border-right-width: thin;
+border-left-color: #FF6600;
+border-left-width: thin;
+border-top-color: #FF6600;
+border-top-width: thin;
+border-bottom-color: #FF6600;
+border-bottom-width: thin;
+background-color: #f1f1f1;
+}
+
+.clothes_pic_font1{
+	font-family: "楷体";
+	font-size: 12px;
+	color: #000000;
+	padding: 6px 0px;
+	font-weight: bold;
+}
+
+.clothes_pic_font1 a{
+	font-family: "楷体";
+	font-size: 10px;
+	color: #000000;
+	
+}
+
+.clothes_pic_font2{
+	font-family: "楷体";
+	font-weight: bolder;
+	color: #FF6600;
+	font-size: 18px;
+	padding: 10px 0px;
+}
+
+.clothes_pic_font3{
+	padding-bottom: 5px;
+}
