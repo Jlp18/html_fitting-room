@@ -1,0 +1,86 @@
+body{
+	background: #EDEDE2;
+}
+.logo{
+	text-align: center;
+}
+.logo img{
+	position: absolute;
+	top: 30px;
+	left: 100px;
+}
+.gunping{
+	position: absolute;
+	left: 400px;
+	right: 30px;
+	top: 35px;
+}
+.gunping span{
+	font-family: "微软雅黑";
+	font-size: 28px;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+.men{
+	text-align: center;
+	position: absolute;
+	top: 162px;
+	margin-bottom: 30px;
+	display: none;
+}
+.women img{
+	width: 600px;
+}
+.women{
+	position: absolute;
+	text-align: center;
+	top: 162px;
+	margin-bottom: 30px;
+	
+}
+
+
+.choice{
+	width: 350px;
+	height: 400px;
+	/*background-color: #CCCCCC;*/
+	position: absolute;
+	left: 840px;
+	right: 20px;
+	top: 170px;
+}
+
+
+#sexChoice{
+	width: 340px;
+	height: 20px;
+	margin-bottom: 30px;
+}
+#tall{
+	width: 330px;
+	height: 20px;
+	margin-bottom: 30px;
+}
+#weight{
+	width: 330px;
+	height: 20px;
+	margin-bottom: 30px;
+}
+#xiong{
+	width: 330px;
+	height: 20px;
+	margin-bottom: 30px;
+}
+#yao{
+	width: 330px;
+	height: 20px;
+	margin-bottom: 30px;
+}
+#tun{
+	width: 330px;
+	height: 20px;
+	margin-bottom: 45px;
+}
+.commit{
+	text-align: center;
+}

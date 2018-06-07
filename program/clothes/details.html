@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>虚拟试衣</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap-3.3.7/dist/css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="css/details.css" />
+		<script type="text/javascript" src="js/details.js"></script>
+	</head>
+	<body>
+		<div class="logo">
+			<img src="img/logo.png" />
+		</div>
+		<div class="gunping">
+			<marquee><span>欢迎使用MGoutfit虚拟试衣</span></marquee>
+		</div>
+		<div class="container">
+			<div class="men" id="men">
+				<img src="img/3dman.png" class="img-thumbnail" />
+			</div>
+			<div class="women" id="women">
+				<img src="img/3dwomen.png" class="img-thumbnail" />
+			</div>
+			<div class="choice">
+				<div class="col-lg-6" id="sexChoice">
+					<div class="input-group">
+						<span class="input-group-addon">
+							<input type="radio" id="sex" name="sex" value="male" onchange="change()"/>&nbsp;&nbsp;男
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; 
+							<input type="radio" id="sex" name="sex" value="female" onchange="change()"/>&nbsp;&nbsp;女
+						</span>
+					</div>
+				</div>
+				<div class="tall">
+					<div class="input-group" id="tall">
+						<span class="input-group-addon">身高</span>
+						<input type="text" class="form-control" />
+						<span class="input-group-addon">cm</span>
+					</div>
+				</div>
+				<div class="weight">
+					<div class="input-group" id="weight">
+						<span class="input-group-addon">体重</span>
+						<input type="text" class="form-control" />
+						<span class="input-group-addon">kg</span>
+					</div>
+				</div>
+				<div class="xiong">
+					<div class="input-group" id="xiong">
+						<span class="input-group-addon">胸围</span>
+						<input type="text" class="form-control" />
+						<span class="input-group-addon">cm</span>
+					</div>
+				</div>
+				<div class="yao">
+					<div class="input-group" id="yao">
+						<span class="input-group-addon">腰围</span>
+						<input type="text" class="form-control" />
+						<span class="input-group-addon">cm</span>
+					</div>
+				</div>
+				<div class="tun">
+					<div class="input-group" id="tun">
+						<span class="input-group-addon">臀围</span>
+						<input type="text" class="form-control" />
+						<span class="input-group-addon">cm</span>
+					</div>
+				</div>
+				<div class="commit">
+					<button type="button" class="btn btn-success">确认</button>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+					<button type="button" class="btn btn-danger">重置</button>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
